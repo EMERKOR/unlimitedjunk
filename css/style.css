@@ -65,7 +65,7 @@ p { margin-bottom: 1em; }
 }
 
 .section {
-  padding: 3rem 0;
+  padding: 4rem 0;
 }
 
 .section--gray {
@@ -164,6 +164,8 @@ p { margin-bottom: 1em; }
   color: var(--white);
   padding: 3rem 1rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero h1 {
@@ -285,7 +287,7 @@ p { margin-bottom: 1em; }
 /* Service Area */
 .service-area {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   background: var(--light-gray);
 }
 
@@ -300,8 +302,8 @@ p { margin-bottom: 1em; }
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  padding: 2rem 1rem;
+  gap: 3rem;
+  padding: 3rem 1rem;
 }
 
 .trust-item {
@@ -531,7 +533,7 @@ p { margin-bottom: 1em; }
 .cta-section {
   background: var(--primary-red);
   color: var(--white);
-  padding: 2.5rem 1rem;
+  padding: 4rem 1rem;
   text-align: center;
 }
 
@@ -568,15 +570,20 @@ p { margin-bottom: 1em; }
   }
 
   .hero {
-    padding: 5rem 2rem;
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, rgba(237, 28, 36, 0.92) 0%, rgba(196, 25, 32, 0.92) 100%),
+                url('/images/alley-after.jpg') center/cover no-repeat;
   }
 
   .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .hero__subtitle {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero__ctas {
@@ -584,8 +591,34 @@ p { margin-bottom: 1em; }
     max-width: 500px;
   }
 
+  .section {
+    padding: 5rem 0;
+  }
+
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+  }
+
+  .service-card {
+    padding: 2rem;
+  }
+
+  .service-area {
+    padding: 4rem 1rem;
+  }
+
+  .trust-signals {
+    padding: 4rem 1rem;
+    gap: 5rem;
+  }
+
+  .cta-section {
+    padding: 5rem 2rem;
   }
 
   .before-after {
@@ -614,10 +647,12 @@ p { margin-bottom: 1em; }
   .map-container iframe {
     height: 400px;
   }
-}
 
-@media (min-width: 1024px) {
-  .services-grid {
-    grid-template-columns: repeat(4, 1fr);
+  .content-section {
+    padding: 3rem 2rem;
+  }
+
+  .page-header {
+    padding: 3rem 2rem;
   }
 }

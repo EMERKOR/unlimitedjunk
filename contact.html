@@ -113,9 +113,18 @@
   </footer>
 
   <script>
-    function toggleNav() {
+    function toggleNav(e) {
+      e.stopPropagation();
       document.getElementById('nav').classList.toggle('nav--open');
     }
+
+    document.addEventListener('click', function(e) {
+      var nav = document.getElementById('nav');
+      var hamburger = document.querySelector('.hamburger');
+      if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+        nav.classList.remove('nav--open');
+      }
+    });
   </script>
 </body>
 </html>
