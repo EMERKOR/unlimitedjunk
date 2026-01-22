@@ -154,7 +154,6 @@
           </ul>
           <h3>Important Notes:</h3>
           <ul>
-            <li>Must schedule 5+ days in advance</li>
             <li>Site inspection may be required</li>
             <li>Does NOT include hazardous materials (asbestos, lead paint, etc.)</li>
           </ul>
@@ -196,9 +195,18 @@
   </footer>
 
   <script>
-    function toggleNav() {
+    function toggleNav(e) {
+      e.stopPropagation();
       document.getElementById('nav').classList.toggle('nav--open');
     }
+
+    document.addEventListener('click', function(e) {
+      var nav = document.getElementById('nav');
+      var hamburger = document.querySelector('.hamburger');
+      if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+        nav.classList.remove('nav--open');
+      }
+    });
   </script>
 </body>
 </html>
