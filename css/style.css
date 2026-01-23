@@ -684,7 +684,7 @@ p { margin-bottom: 1em; }
   .hero {
     padding: 7rem 2rem;
     background: linear-gradient(135deg, rgba(237, 28, 36, 0.88) 0%, rgba(196, 25, 32, 0.88) 100%),
-                url('/images/full-trailer-uj.png') center/cover no-repeat;
+                url('/images/full-trailer-uj.png') center 70%/cover no-repeat;
   }
 
   .hero h1 {
